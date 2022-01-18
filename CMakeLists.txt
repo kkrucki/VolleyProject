@@ -45,7 +45,7 @@ set(LIB_CVVIDE_D "$ENV{OPENCV_DIR}/x64/vc15/lib/opencv_videoio452d.lib")
 
 
 # Set Startup project
-set_property( DIRECTORY PROPERTY VS_STARTUP_PROJECT Test)
+set_property( DIRECTORY PROPERTY VS_STARTUP_PROJECT Volley)
 
 
 add_executable (Volley main.cpp)
@@ -62,9 +62,6 @@ target_link_libraries(Volley
 	optimized ${LIB_CVHIGH} debug ${LIB_CVHIGH_D}
 	optimized ${LIB_CVCODE} debug ${LIB_CVCODE_D}
 	optimized ${LIB_CVVIDE} debug ${LIB_CVVIDE_D}
-	optimized ${LIB_CVTRCK} debug ${LIB_CVTRCK_D}
-	optimized ${LIB_CVFEAT} debug ${LIB_CVFEAT_D}
-	optimized ${LIB_CVFEATX} debug ${LIB_CVFEATX_D}
 	
 )
 
